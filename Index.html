@@ -40,12 +40,22 @@
 
     <div id="Bloco-01">
 
-        <hr>
+        <div class="a padraoA">
+
+            <hr>
             <h1>In The Past</h1>
             <h4>Photo Studio</h4>
-        <hr>
+
+        </div>
+
+        <div class="b padraoA">
+            <hr>
     
-            <p>Veja como as coisas eram num tempo não tão distante assim.</p>
+            <p>Coisas num tempo não tão distante.</p>
+
+        </div>
+
+        
     </div>
 
 
@@ -53,7 +63,7 @@
 
         <hr>
             <h1>Welcome</h1>
-            <p>Somos um time criativo apaixonado por capturar a essência do tempo em nossas fotos. Combinamos o moderno e o antigo em imagens que revelam a transformação e a beleza das mesmas coisas através das eras. Nossa missão é conectar passado e presente, trazendo novas perspectivas e inspirando futuras gerações.</p>
+            <p>Somos um time criativo, apaixonado por capturar a essência do tempo em nossas fotos. Combinamos o moderno e o antigo em imagens que revelam a transformação e a beleza das mesmas coisas através das eras. Nossa missão é conectar passado e presente, trazendo novas perspectivas e inspirando futuras gerações sobre o quanto podemos evoluir.</p>
         
         <button><a href="">READ MORE</a></button>
             
@@ -81,6 +91,7 @@
                 onmouseover="mudarBoliche(this, 'img/boliche-moderno.jpg')"
         
                 onmouseout="mudarOutraBoliche(this, 'img/boliche-antigo.jpg')"
+                
         
                 /></div>
 
@@ -110,14 +121,78 @@
     </div>
 
     
+
     
-    <!-- <img src="img/barbeador-antigo.jpg" alt="barbeador-antigo"
 
-    onmouseover="mudarImagem(this, 'img/barbeador-moderno.jpg')"
+    <!--Aqui chamamos nossa Section para adicionar informações (tags) à ele  -->
+    <section class="form-container">  <!-- Damos um nome para a nossa Section a qual chamará "Form-Conteiner" -->
+        <!--  -->
+        <div class="container"> <!-- Abrimos uma Div para que possamos destacar nosso formulário  -->
 
-    onmouseout="mudarOutraImagem(this, 'img/barbeador-antigo.jpg')"
+            <form method="get" action="cad.php"> <!-- Abrimos aqui nossa TAG de Formulário -->
 
-    /> -->
+
+                <h1>CONTACT US</h1> <!-- Título para o nosso formulário -->
+
+
+                <div class="input-single"> <!-- Aqui criamos uma divisão para inserirmos nosso Label e Input (Nome e Caixa)  -->
+                    <input type="text" class="input" autocomplete="off" required id="nome" name="nome"> <!-- Atribuimos que é tipo Text, adicionamos um nome para sua classe 
+                                                                                                    e desabilitamos a preenchimento automático -->
+
+                    <label for="nome">Nome</label> <!-- Aqui colocamos o nome que irá aparecer do lado da nossa caixa (input) -->
+                </div>
+
+
+                <div class="input-single"> <!-- Aqui criamos uma divisão para inserirmos nosso Label e Input (Nome e Caixa) -->
+                    <input type="text" class="input" autocomplete="off" required id="email" name="sobrenome"> <!-- Atribuimos que é tipo Text, adicionamos um nome para sua classe 
+                                                                                                    e desabilitamos a preenchimento automático -->
+                    <label for="sobrenome">Sobrenome</label> <!-- Aqui colocamos o nome que irá aparecer do lado da nossa caixa (input) -->
+                </div>
+
+
+                <div class="input-single"> <!-- Aqui criamos uma divisão para inserirmos nosso Label e Input (Nome e Caixa) -->
+                    <input type="number" class="input" autocomplete="off" required id="telefone" name="telefone"> <!-- Atribuimos que é tipo Text, adicionamos um nome para sua classe 
+                        e desabilitamos a preenchimento automático -->
+                    <label for="telefone">Telefone</label> <!-- Aqui colocamos o nome que irá aparecer do lado da nossa caixa (input) -->
+                </div>
+
+
+                <div class="btn"> <!-- Aqui inserimos nosso Botão de Enviar -->
+                    <input type="submit" value="Enviar"> <!-- Atribuimos um nome de classe para ele como "btn" Type Submit para botão e o Value que é o nome visível no submit-->
+                </div> 
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <div id="Bloco-05">
+
+        <hr>
+        <h2>CONTACTS</h2>
+
+        <span class="span"> <P>In The Past</P></span>
+       
+        <P>Atendimento 2ª á 6ª das 9h às 18g</P>
+        <P>Almoço 12h / 13h</P>
+
+        <div>
+        
+        <a href=""><button>WhatsApp</button></a>
+
+        <a href=""><button>Instagram</button></a>
+
+        </div>
+
+        
+
+        2024 | @if.dev_
+
+
+    </div>
+  
     
 
     <script src="Script.js"></script>

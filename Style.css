@@ -3,6 +3,12 @@
     text-decoration: none;
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
+    
+}
+
+body{
+    width: 100%;
+    height: 100vh;
 }
 
 header{
@@ -35,21 +41,20 @@ header .menu-contato a{
 
 
 #Bloco-01{
-    background-image: url(img/bloco-01-fotob.jpg);
+    background-image: url(img/01-back.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90vh;
+    height: 65vh;
     background-position: center;
     text-align: center;
     color: white;
+    padding: 6rem;
 }
-
-
 
 #Bloco-01 hr{
     width: 30%;
-    margin-left: 30%;
-    padding: 4rem;
+    margin-left: 35%;
+    padding: 1.2rem;
     box-shadow: 0px 4px goldenrod;
     border-color: transparent;
     border-radius: none;
@@ -57,7 +62,7 @@ header .menu-contato a{
 
 #Bloco-01 h1{
     padding: 2rem;
-    margin-bottom: -20px;
+    /* margin-bottom: -20px; */
     font-size: 30px;
 }
 
@@ -67,30 +72,75 @@ text-align: justify center;
 margin-top: 20px;
 }
 
+#Bloco-01 b hr{
+    margin-top: -10rem;
+}
+
+
 #Bloco-02{
     background-color: black;
-     height: 100vh;
+     height: 54vh;
      text-align: center;
      color: white;
+     padding: 10rem;
+ }
+
+ #Bloco-02 hr{
+    width: 25%;
+    margin-left: 36%;
+    padding: 1.2rem;
+    box-shadow: 0px 4px goldenrod;
+    border-color: transparent;
+    border-radius: none;
+ }
+
+ #Bloco-02 h1{
+    font-size: 50px;
+    padding: 2rem;
+ }
+
+ #Bloco-02 p{
+    width: 50vw;
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 17%;
+    margin-bottom: 3rem;
+ }
+
+ #Bloco-02 button{
+    padding: 0.5rem;
+    font-size: 15px;
+    width: 10vw;
+    background-color: black;
+    border-color: white;
+ }
+
+ #Bloco-02 button a{
+    color: white;
+
  }
 
 #Bloco-03{
     display: flex;
-    justify-content: center;
-    height: 50vh;
-    padding: 1rem;
+    height: 99vh;
+    padding: 0rem;
+    
 }
+
+
 #Bloco-03 div{
-    margin-bottom: -2.1rem;
+    margin-bottom: -2.2rem;
+    
 }
 
 #Bloco-03 .div-padrao img{
-    width: 40vw;
-    height: 48vh;
+    width: 49.5vw;
+    height: 49.5vh;
     border-radius: 0%;
 }
 
 
+/*configuração das img do Bloco-03*/
 img{
     width: 200px;
     height: auto;
@@ -102,4 +152,168 @@ img:hover{
     transform: scale(1.0); /*aumenta o tamanho da img ao passar o mouse*/
     transition: 0.1s;
     cursor: pointer;
+}
+
+/* Aqui vem a configuração do que seria o Bloco-04 */
+.form-container {
+    opacity: 90%;
+    height: 70vh;
+    padding: 6rem;
+    background-color: black;
+    
+}
+
+
+.container { /* Aqui estamos chamando nossa Class */
+    max-width: 1280px; /* Atribuímos aqui um tamanho máximo de largura que essa Class irá exercer */
+    margin: 0 auto; /*  dizemos ao navegador que as margens superior e inferior são iguais a 0 e as da esquerda e direita são automáticas */
+    opacity: 90%;
+}
+
+
+form{ /* Aqui chamamos nosso Form para Estilização */
+    background-color: black; /* Colocamos uma cor de fundo */
+    max-width: 500px; /* Atribuímos aqui um tamanho máximo de largura que esse formulário irá exercer */
+    height: 450px; /* Lagura do formulário */
+    padding: 40px; /* Preenchimento */
+    border-radius: 20px; /* Arredondamento das bordas do Formulário */
+}
+
+
+form h1{ /* Chamamos nosso Texto para estilização */
+    text-align: center; /* Alinhamos ao centro */
+    font-size: 30px; /* Tamanho da letra */
+    color: white; /* Cor da letra */
+}
+
+
+form p{ /* Chamamos nosso Paragrafo para estilização */
+    text-align: center; /* Alinhando para o centro nosso Parágrafo */
+    margin: 20px 0; /* dizemos ao navegador que as margens superior e inferior são iguais a 20 e as da esquerda e direita são 0 */
+}
+
+
+.input-single{ /* Chamamos nossa Class que está encabeçada nas Div´s dos nossos Input e Label. */
+    position: relative; /* Posição relativa  */
+    margin: 20px 0; /* dizemos ao navegador que as margens superior e inferior são iguais a 20 e as da esquerda e direita são 0 */
+}
+
+
+.input-single > label { /* Chamamos nossa Label para estilização */
+    position: absolute; /* Atribuimos uma posição absoluta em relação a o formulário */
+    left: 0; /* Zeramos a margin esquerda */
+    bottom: 5px; /* Margem inferior atribuimos para 5px */
+    transition: all 0.2s; /* Inserimos uma transição total para 0.2s */
+    cursor: text; /* Aqui é para quando passar o mouse, aparecer o indicador de texto  */
+}
+
+
+.input{ /* Aqui chamamos nosso Submit ou seja, o botão para estilização */
+    width: 100%; /* Largura */
+    border: 0; /* Tamanho da borda */
+    border-bottom: 2px solid #ccc; /* estilização da borda inferior */
+    padding: 5px; /* Preenchimento do Input */
+    font-size: 17px; /* Tamanho */
+    outline: 0; /*  */
+}
+
+
+form > .input-single > .input:focus ~ label, /*  */
+form .input-single .input:valid ~ label{ /*  */
+    transform: translateY(-25px); /*  */
+    font-size: 12px; /*  */
+    color: black; /*  */
+}
+
+
+.btn { /* Aqui estamos chamando nossa Class .btn para estilização */
+    width: 100%; /* Largura */
+    text-align: center; /* Alinhando o texto ao centro */
+
+}
+
+
+form input[type=submit]{ /* Aqui estilizamos nosso Botão de enviar*/
+    padding: 10px 40px; /* Preenchimento da altura e largura do botão */
+    border: 0; /* Aqui zeramos a borda */
+    border-radius: 10px; /* Colocamos aqui um arredondamento no Botão */
+    background-color: goldenrod; /* Cor do Botão */
+    color: rgb(255, 255, 255); /* Cor da letra (Dentro do Botão) */
+    cursor: pointer; /* Torna o botão em algo clicavel  */
+    border-color: white;
+}
+
+#Bloco-05{
+    background-image: url(img/05-back.png);
+    height: 74vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 90%;
+    background-color: rgb(49, 33, 33);
+    padding: 5rem;
+    color: white;
+    text-align: center;
+}
+
+#Bloco-05 .span{
+    color: goldenrod;
+    font-size: 35px;
+    padding: 1rem;
+}
+
+#Bloco-05 h2{
+    font-size: 30px;
+    padding: 2rem;
+}
+
+
+
+
+
+@media(max-width: 430px) {
+
+    #Bloco-02{
+        padding: 1rem;
+    }
+
+    #Bloco-02 hr{
+        width: 25%;
+        margin-left: 32%;
+        padding: 1.2rem;
+        box-shadow: 0px 3px goldenrod;
+        border-color: transparent;
+        border-radius: none;
+     }
+
+    #Bloco-02 h1{
+        font-size: 30px;
+        padding: 1rem;
+     }
+
+    #Bloco-02 p{
+        width: 80vw;
+        font-size: 18px;
+        text-align: justify;
+        margin-left: 5%;
+        margin-bottom: 3rem;
+     }
+
+     #Bloco-02 button{
+        padding: 0.5rem;
+        font-size: 1px;
+        width: 10vw;
+        background-color: black;
+        border-color: white;
+     }
+
+
+    .form-container {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+
+    form h1 {
+       font-size: 22px; 
+    }
 }

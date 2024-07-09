@@ -35,3 +35,6 @@ function mudarCrianca(imagem) {
 function mudarOutraCrianca(imagem) {
     imagem.src = 'img/criança-moderna.jpg';
 };
+
+
+
