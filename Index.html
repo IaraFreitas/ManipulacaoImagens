@@ -1,17 +1,127 @@
+<!-- Atividade prática referente a aula de 05/07/24 - DB -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Atividade Manipulação de Imagens</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icon.jpg" type="image/x-icon">
 </head>
 
 <body>
+
+    <header>
+
+        <div class="menu-logo">
+            <a href=""> <h1>In The Past</h1> </a>
+            
+        </div>
+
+        <div class="menu-list">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contacts</a></li>
+        </ul>
+        </div>
+
+        <div class="menu-contato">
+            <a href="">Tel.200-2345-0780</a>
+        </div>
+
+    </header>
+
+
+    <div id="Bloco-01">
+
+        <hr>
+            <h1>In The Past</h1>
+            <h4>Photo Studio</h4>
+        <hr>
+    
+            <p>Veja como as coisas eram num tempo não tão distante assim.</p>
+    </div>
+
+
+    <div id="Bloco-02">
+
+        <hr>
+            <h1>Welcome</h1>
+            <p>Somos um time criativo apaixonado por capturar a essência do tempo em nossas fotos. Combinamos o moderno e o antigo em imagens que revelam a transformação e a beleza das mesmas coisas através das eras. Nossa missão é conectar passado e presente, trazendo novas perspectivas e inspirando futuras gerações.</p>
+        
+        <button><a href="">READ MORE</a></button>
+            
+    </div>
+
+
+
+    <div id="Bloco-03">
+
+        <div>
+
+            <div class="Div-1 div-padrao" ><img src="img/barbeador-antigo.jpg" alt="barbeador"
+
+            onmouseover="mudarBarbeador(this, 'img/barbeador-barbeador-moderno.jpg')"
+                        
+            onmouseout="mudarOutraBarbeador(this, 'img/barbeador-barbeador-antigo.jpg')"
+
+
+                        
+            /></div>
+        
+        
+                <div class="Div-2 div-padrao"><img src="img/boliche-antigo.jpg" alt="boliche"
+        
+                onmouseover="mudarBoliche(this, 'img/boliche-moderno.jpg')"
+        
+                onmouseout="mudarOutraBoliche(this, 'img/boliche-antigo.jpg')"
+        
+                /></div>
+
+        </div>
+
+        <div>
+
+                <div class="Div-3 div-padrao"><img src="img/bolo-antigo.jpg" alt="bolo"
+
+                onmouseover="mudarBolo(this, 'img/bolo-moderno.jpg')"
+
+                onmouseout="mudarOutraBolo(this, 'img/bolo-antigo.jpg')"
+
+                /></div>
+
+
+                    <div class="Div-4 div-padrao"><img src="img/crianças-antigamente.jpg" alt="criancas"
+
+                    onmouseover="mudarCrianca(this, 'img/criança-moderna.jpg')"
+
+                    onmouseout="mudarOutraCrianca(this, 'img/crianças-antigamente.jpg')"
+
+                    /></div>
+
+        </div>
+
+    </div>
+
+    
+    
+    <!-- <img src="img/barbeador-antigo.jpg" alt="barbeador-antigo"
+
+    onmouseover="mudarImagem(this, 'img/barbeador-moderno.jpg')"
+
+    onmouseout="mudarOutraImagem(this, 'img/barbeador-antigo.jpg')"
+
+    /> -->
     
 
     <script src="Script.js"></script>
+
 </body>
 
 </html>
