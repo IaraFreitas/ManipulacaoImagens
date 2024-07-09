@@ -100,6 +100,6 @@ img{
 
 img:hover{
     transform: scale(1.0); /*aumenta o tamanho da img ao passar o mouse*/
-    transition: 0.3s;
+    transition: 0.1s;
     cursor: pointer;
 }
