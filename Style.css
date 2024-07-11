@@ -157,7 +157,7 @@ img:hover{
 /* Aqui vem a configuração do que seria o Bloco-04 */
 .form-container {
     opacity: 90%;
-    height: 70vh;
+    height: 68vh;
     padding: 6rem;
     background-color: black;
     
@@ -166,7 +166,7 @@ img:hover{
 
 .container { /* Aqui estamos chamando nossa Class */
     max-width: 1280px; /* Atribuímos aqui um tamanho máximo de largura que essa Class irá exercer */
-    margin: 0 auto; /*  dizemos ao navegador que as margens superior e inferior são iguais a 0 e as da esquerda e direita são automáticas */
+    margin: 0 25%; /*  dizemos ao navegador que as margens superior e inferior são iguais a 0 e as da esquerda e direita são automáticas */
     opacity: 90%;
 }
 
@@ -177,6 +177,7 @@ form{ /* Aqui chamamos nosso Form para Estilização */
     height: 450px; /* Lagura do formulário */
     padding: 40px; /* Preenchimento */
     border-radius: 20px; /* Arredondamento das bordas do Formulário */
+    margin-top: 3rem;
 }
 
 

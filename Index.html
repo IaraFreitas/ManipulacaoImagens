@@ -9,6 +9,61 @@
     <title>Atividade Manipulação de Imagens</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/icon.jpg" type="image/x-icon">
+
+    <style>
+      
+      #Bloco-06 ul{
+            list-style: none;
+            height: fit-content;
+            display: flex;
+            gap: 6px;
+            flex-direction: column;
+            border: 1px solid white;
+            padding: 10px;
+            color: white;
+            border-radius: 10px;
+            background-color: black;
+
+        
+      }
+
+       #Bloco-06 li{
+        color: grey;
+            background-color: black;
+            padding: 5px 10px;
+            border-radius: 10px;
+            border: 1px solid green;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            display: none;
+
+       }
+
+            .material-outlined {
+            color: aqua;
+            display: block;
+        }
+
+
+        li:hover{
+            scale: 1.02;
+            color: white;
+            gap: 10px;
+            background-color: black;
+        }
+
+        li:hover > .material-outlined {
+            filter: drop-shadow(0px 0px 5px aqua);
+        }
+
+
+        .flex li {
+            display: flex;
+        }
+    </style>
+
+
 </head>
 
 <body>
@@ -190,6 +245,31 @@
 
         2024 | @if.dev_
 
+
+    </div>
+
+
+    <div id="Bloco-06">
+
+        <ul>
+            Veja mais
+            <li><span class="material-outlined">aspirador</span> | Aspirador</li>
+        
+            <li><span class="material-outlined">pizza</span> | Pizza</li>
+        
+            <li><span class="material-outlined">escola</span> | Escola</li>
+        
+            <li><span class="material-outlined">ferro</span> | Ferro</li>
+            
+         </ul>
+        
+        <script>
+            const ul = document.querySelector("ul");
+        
+            ul.addEventListener("click", () => {
+                ul.classList.toggle('flex') //toggle usado para fazer a troca de class ou adição
+            });
+        </script>
 
     </div>
   
